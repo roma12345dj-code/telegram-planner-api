@@ -20,3 +20,6 @@ app.get("/", (req, res) => {
     message: "Telegram Planner Backend работает"
   });
 });
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Planner backend запущен на порту ${process.env.PORT || 3000}`);
+});
